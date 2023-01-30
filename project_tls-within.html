@@ -15,7 +15,6 @@
 		<!-- Wrapper -->
 		<div id="wrapper">
 
-				<!-- Header --> <!--Last Edited: 01/07/2020-->
 				<header id="header">
 					<div class="inner">
 						<div id = "dekstop Banner" class = "desktop" style = " margin : .5em 0 0 0">
@@ -58,8 +57,8 @@
 									<div class = "dropdown"style="padding-bottom: 10px;"><a href = "projects.html"> Projects</a>
 										<div class = "dropdown-content" style = "font-size: 1em">
 											<a href = "projects.html">Overview</a>
-											<a href = "project_switcharoo.html">Switcharoo</a>
-											<a href = "project_survivalMoon.html">Survival Moon</a>
+											<a href="project_tls-within.html">The Last Sky: Within</a>
+											<a href="project_superRacer.html">SuperRacer</a>
 											<a href = "project_summit.html">Summit</a>
 										</div>
 									</div>
@@ -89,8 +88,8 @@
 							</ul>
 							<li><a href="projects.html">Projects</a></li>
 							<ul>
-								<li><a href="project_switcharoo.html">Switcharoo</a></li>
-								<li><a href="project_survivalMoon.html">Survival Moon</a></li>
+								<li><a href="project_tls-within.html">The Last Sky: Within</a></li>
+								<li><a href="project_superRacer.html">SuperRacer</a></li>
 								<li><a href="project_summit.html">Summit</a></li>
 
 							</ul>
@@ -137,13 +136,13 @@
 							<div id = "Desktop Details" class = "desktop">
 								<article id = "project details" style = "width : 45%">
 									<p> <i>The Last Sky: Within</i> is a single player platforming game being developed at <a href = "http://littleguygames.com/">Little Guy Games</a> and it is planned for an Xbox release in Q2 2023. The project is a reimagining of Little Guy Game's The Last Sky, which was released
-									some years prior. </p><p>The design has been altered to focus on the platforming aspect of it's predecessor, and the "click-and-point" nature is no longer present in the game. Additionally, many new systems and mechanics are being introduced.
+									some years prior. </p>
 									
 									<h3 style = "font-size : 18pt; margin: 0 0 1em 0;">  Details</h3>
 									<p>Time: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Oct 2022 - Current<br/>
 										Team Size: &nbsp 4-6 <br/>
 										Tools: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Unity <br/>
-										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Technical Designer, Level Designer<br/>
+										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Technical Designer, AI Programmer<br/>
 										
 											
 										</p>
@@ -158,13 +157,13 @@
 							<div id = "mobile Details" class = "mobileDev">
 								<article id = "project details" style = "width : 100%">
 									<p> <i>The Last Sky: Within</i> is a single player platforming game being developed at <a href = "http://littleguygames.com/">Little Guy Games</a> and it is planned for an Xbox release in Q2 2023. The project is a reimagining of Little Guy Game's The Last Sky, which was released
-									some years prior. </p><p>The design has been altered to focus on the platforming aspect of it's predecessor, and the "click-and-point" nature is no longer present in the game. Additionally, many new systems and mechanics are being introduced.
+									some years prior. </p>
 									<h3 style = "font-size : 18pt; margin: 0 0 1em 0;">Details</h3>
 									<p>Time: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Oct 2022 - Current<br/>
 										Team Size: &nbsp 5 - 7<br/>
 										Tools: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Unity <br/>
 										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Technical Designer, &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-										Level Designer</p>
+										AI Programmer</p>
 									</p>
 								
 								
@@ -177,32 +176,49 @@
 								
 								<ul style = "text-align: center; list-style-position: inside;">
 									<li>Game Mechanic Design & Development</li>
-									<li>Level Design</li>
+									<li>AI Design & Development</li>
 									<li>Tech Art</li>
 									<li>Technical UI Implementation</li>
-									<li>AI Design & Development</li>
 									<li>Editor Tools</li>
-									<li>Prototyping</li>
 								</ul>
 								
 							
 								<article id = "long project details">
 									<br/><p>This is the third project I have been a part of while at LGG (Little Guy Games). After the soft release of Super Racer, I was placed onto this team, to assist in development for an Xbox release. While on this project, I have participated in
 									code reviews, code feedback, design meetings, and project management.
-									</p><p>I performed multiple programming tasks for the duration of this project, while also performing general development tasks as well. These tasks included:
-									
-									<ul style = "text-align: center; list-style-position: inside;">
-										<li>Game Mechanic Design</li>
-										<li>Level Design</li>
-										<li>UI implementation</li>
-										<li>Shader Development</li>
-									</ul>
-
+									</p><p>I performed multiple programming tasks for the duration of this project, while also performing general development tasks as well. My main contributions are ai development and game mechanics.
 									<br/><br/>
 									
 									</p>
 								</article>
 							</article>
+							<article id = "AI">
+								<h2 align = center> AI Development </h2> <hr/>				
+									<br/><p>For this project, I implemented a node-based system that the AI would use at their behaviour tree. Alongside the behaviour tree, the AI components needed a modular structure so that the nodes could be used for all sorts of AI, while still allowing different AI
+									to have different functionality. For example, there is a 'wraith' enemy and a 'golem' enemy. Both ai behave very differently, and have different attacks. But, their components inherit from the same base classes, and as a result they are both able to use the behaviour tree system.
+									</p><p>
+									I was tasked with designing and developing two AI; a raven and a wraith / ghost.
+									</p>
+									<p>I was also co-developing several other enemies alonside other programmers, mainly assisting with new features and bugs, but also assisted in training on how to use the system.
+									<br/><br/>
+									
+									</p>
+							</article>
+							<div class = "desktop" align = center>
+									<br/>
+									<a class="example-image-link" href="images/TLS/behavTree.png" data-lightbox="galleryDesktop">
+										<img  style = "width: 30%;"   src="images/TLS/behavTree.png" alt="" />
+									</a>
+									<a class="example-image-link" href="images/TLS/wraithEnemy.gif" data-lightbox="galleryDesktop">
+										<img  style = "width: 30%;"   src="images/TLS/wraithEnemy.gif" alt=""/>	
+									</a>
+									
+									<a class="example-image-link" href="images/TLS/BirdEnemy.gif" data-lightbox="galleryDesktop">
+										<img  style = "width: 30%;"   src="images/TLS/BirdEnemy.gif" alt="" />		
+									</a>									
+									
+									
+								</div>
 							
 							
 						<br/>
