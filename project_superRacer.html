@@ -141,7 +141,7 @@
 									<p>Time: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Aug 2021 - Oct 2022<br/>
 										Team Size: &nbsp 5-7 <br/>
 										Tools: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Unity <br/>
-										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Programmer, Design Generalist<br/>
+										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Technical Game Designer<br/>
 										
 											
 										</p>
@@ -161,8 +161,7 @@
 									<p>Time: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Aug 2021 - Oct 2022 <br/>
 										Team Size: &nbsp 5 - 7<br/>
 										Tools: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Unity <br/>
-										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Programmer, &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-										Design Generalist</p>
+										Role: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Technical Game Designer</p>
 									</p>
 								
 								
@@ -174,19 +173,12 @@
 								<h2 align = center> Contributions </h2> <hr/>
 								
 								<ul style = "text-align: center; list-style-position: inside;">
-									<li>Core Game Systems</li>
-									<li>Database Solution Integration</li>
+									<li>Game Design</li>
+									<li>Game Modes & Game Systems Design</li>
 									<li>Live-Ops development</li>
 									<li>UI Design & Implementation</li>
-									<li>Vehicle Controller</li>									
-									<li>AI Racers</li>
-									<li>Unity Editor Tools & Inspectors</li>
-									<li>Gameplay Design</li>
-									<li>Technical Artist</li>
-									
-									
-									
-	
+									<li>Vehicle Controller & AI Controllers</li>									
+
 								</ul>
 								
 							
@@ -194,17 +186,12 @@
 									<br/><p>I was hired at LGG (Little Guy Games) in May 2021, and was moved to project Super Racer in August 2021. I was originally tasked with various programming tasks, such as AI
 									development, and game systems, but I was also given many design related tasks. As the sole programmer, I was tasked with overseeing all the on-going game programming tasks, while 
 									also planning for future implementation.
-									</p><p>I performed multiple programming tasks for the duration of this project, while also performing general development tasks as well. These tasks included:
+									</p><p>I performed multiple design & programming tasks for the duration of this project, while also performing general development tasks as well. These tasks included:
 									
 									<ul style = "text-align: center; list-style-position: inside;">
 										<li>Database integration</li>
-										<li>Vehicle gameplay design & tweaking</li>
 										<li>Vehicle paintjob designer</li>									
-										<li>Economy Design</li>
-										<li>Gameplay Design</li>
 										<li>Sound retrieval / implentation</li>
-										
-										
 									</ul>
 
 									<br/><br/>
@@ -216,6 +203,42 @@
 							
 						<br/>
 						<br/>
+						<article id="Game Mode Design">
+							<h2 align = center> Game Mode Design</h2> <hr/>
+							<br/><p>Super Racer was a live-ops game, with regular updates that featured new game modes, tuned game systems and new levels. When designing the new game modes, I used an iterative approach.
+							</p>
+							<p>Working with our lead designer, we defined what the goals of the new game mode were, and from there I would start by making some rough prototypes of the game modes. Our initial game modes
+							were meant as weekly challenges, and so while prototyping I would look for modes that were fun, easy to learn, and quick to play. After finding the best fit, I would fine tune the game modes so they
+							felt fair, and consistent, then send to the playtesting team. After releasing the game mode, I would continue to take feedback from both the playtest team, and the community, to fine tune the game mode
+							in the next update.
+							</p>
+							<p>An example game mode I designed was the coin collect mode. This mode is similar to the coin modes in Mario Kart, where players race around the map to collect coins. In our instance, instead of multiplayer,
+							the game mode was based on a timer, and your results were compared to other players once completed. When designing this, I had to account for a few things:
+							<br/>
+							<br/>1. On subsequent playthroughs, coins would always spawn in the same spot, making the game mode not too challenging later on.
+							<br/>2. Constant updates to levels to account for this would not be possible with our team size.
+							<br/>
+							<br/>
+							Thus, I designed a grid-like game system, where each grid section would spawn a level prefab based on some data that was input into the system and also an editor tool used to create these levels quickly. 
+							By doing this, creating coin-collect specific levels would be very easy, and efficient. Additionally, because the level layout was data-based, we could save the level data on the server, which meant that we
+							didn't have to push an update with a new coin layout every week.
+							</p>
+							<div class = "desktop" align = center>
+								<br/>
+								<a class="example-image-link" href="images/SuperRacer/vroomCollect.gif" data-lightbox="galleryDesktop"/>
+									<img  style = "width: 30%;"   src="images/SuperRacer/vroomCollect.gif" alt="">	
+								</a>
+								<!--<a class="example-image-link" href="images/TLS/wraithEnemy.gif" data-lightbox="galleryDesktop">
+									<img  style = "width: 30%;"   src="images/TLS/wraithEnemy.gif" alt=""/>	
+								</a>-->
+							
+								<a class="example-image-link" href="images/SuperRacer/vroomMapEditor.gif" data-lightbox="galleryDesktop">
+								<img  style = "width: 30%;"   src="images/SuperRacer/vroomMapEditor.gif" alt="" />		
+								</a>									
+							
+							</div>
+							<br/>
+						</article>
 						
 						<article id = "AI Racers">
 								<h2 align = center> AI Racers </h2> <hr/>
