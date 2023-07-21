@@ -26,6 +26,28 @@ pBox{
 	display: none;
 }
 
+
+.projectContainer{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: rgba(25, 25, 25, 0.25);
+  margin-bottom:1em;
+}
+.projectContainerMargins{
+	margin : 0 0 0 5em;
+}
+.projectContainer > p{
+	align-self: flex-end;
+	text-align: left;
+	
+	
+}
+.projectContainer > img{
+	margin-right: 1em;
+	max-width: 10%;
+	max-height:10%;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -89,6 +111,23 @@ pBox{
         .mobileDev{ display: block;}
 		.mobile_device_380px{display: block;}       
 		.desktop {display: none;}
+		.projectContainer{
+			display: block;
+			align-items: center;
+			justify-content: left;
+			background-color: rgba(25, 25, 25, 0.25);
+			margin-bottom:1em;
+		}
+		
+		.projectContainerMargins{
+			margin : 0 0 0 0em;
+		}
+		.projectContainer > img{
+			margin-right: 1em;
+			max-width: 100%;
+			max-height:100%;
+		}
+		
     } 
 
     /* if mobile device max width 480px */
@@ -96,6 +135,23 @@ pBox{
 		.mobileDev{ display: block;}
 		.mobile_device_480px{display: block;}
 		.desktop {display: none;}
+		
+		.projectContainer{
+			display: block;
+			align-items: center;
+			justify-content: left;
+			background-color: rgba(25, 25, 25, 0.25);
+			margin-bottom:1em;
+		}
+		
+		.projectContainerMargins{
+			margin : 0 0 0 0em;
+		}
+		.projectContainer > img{
+			margin-right: 1em;
+			max-width: 50%;
+			max-height:50%;
+		}
 		
 	}
 	
