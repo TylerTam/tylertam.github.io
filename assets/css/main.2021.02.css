@@ -34,6 +34,12 @@ pBox{
   background-color: rgba(25, 25, 25, 0.25);
   margin-bottom:1em;
 }
+
+.projectContainer:hover{
+
+  background-color: rgba(25, 25, 25, 1);
+  
+}
 .projectContainerMargins{
 	margin : 0 0 0 5em;
 }
@@ -89,6 +95,7 @@ pBox{
   text-align: center;
   padding: 20px 0;
 }
+
 .grid-container-tiles > div > a > img{
 	object-fit: cover;
 	width: 75%; 
