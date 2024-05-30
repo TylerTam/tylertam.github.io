@@ -22,10 +22,26 @@ pBox{
 .mobileDev{
 	display: none;
 }
+.mobileDev > h3{
+	text-align: center;
+	font-size: 18pt;
+}
 .ipadDev{
 	display: none;
 }
 
+
+.boxButton{
+
+  background-color: rgba(25, 25, 25, 0.25);
+  margin-bottom:1em;
+}
+
+.boxButton:hover{
+
+  background-color: rgba(25, 25, 25, 1);
+  
+}
 
 .projectContainer{
   display: flex;
